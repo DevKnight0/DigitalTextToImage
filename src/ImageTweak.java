@@ -17,12 +17,13 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.*;
 
-public class ImageTwiker {
+public class ImageTweak {
 
     public static int counter=0;
     public static void main(String[] args) throws IOException {
+
         try(BufferedReader l=new BufferedReader(new FileReader("loc.txt"))) {
-            String s=" ";
+            String s;
             while((s=l.readLine() )!=null) {
                 SingleLineConverter(s, s.length());
 
